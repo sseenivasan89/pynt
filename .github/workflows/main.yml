@@ -19,7 +19,7 @@ jobs:
         python3 -m pip install --upgrade pyntcli 
     - name: get my collection 
       run: | 
-        curl https://github.com/sseenivasan89/pynt/blob/main/myCollection.json -o myCollection.json     
+        curl https://raw.githubusercontent.com/sseenivasan89/pynt/main/myCollection.json -o myCollection.json     
     - name: run pynt with newman integration 
       run: | 
         pynt newman --collection myCollection.json --reporters
