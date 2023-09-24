@@ -17,7 +17,7 @@ jobs:
     - name: install pynt cli
       run: | 
         python3 -m pip install --upgrade pyntcli 
-    - name: get goat collection 
+    - name: get my collection 
       run: | 
         curl https://github.com/sseenivasan89/pynt/blob/main/myCollection.json -o myCollection.json     
     - name: run pynt with newman integration 
